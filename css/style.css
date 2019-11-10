@@ -13,7 +13,6 @@ h1{
 
 body{
   font-family: 'Lora', serif;
-  font-size: 16px;
   line-height: 1;
   background-color: #FFFFFA;
   background-image: url('../images/background.png');
@@ -22,14 +21,59 @@ body{
 footer{
   background-color: #f0f6ff;
   color: black;
-  /* grid-column: 1 / -1;
-  grid-row: 7 / auto; */
   padding: 30px;
   width: 100%;
   text-align: center;
-  /* position: relative; */
-  /* position:fixed; */
+  position:relative;
   bottom: 0;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
 }
 
 .skip a{
@@ -83,35 +127,30 @@ input[type=submit]:hover {
   color: white;
 }
 
- .gallery {
-     padding: 0;
-     margin: 0;
-     list-style: none;
+/* .gallery {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
-     display: -webkit-box;
-     display: -moz-box;
-     display: -ms-flexbox;
-     display: -webkit-flex;
-     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 
-     -webkit-flex-flow: row wrap;
-     justify-content: space-around;
- }
+    -webkit-flex-flow: row;
+    justify-content: space-between;
+}
 
-   .galleryimg {
-     padding: 5px;
-     width: 200px;
-     height: 150px;
-     margin-top: 10px;
-   }
+  .galleryimg {
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+  } */
+/* }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container{
-    display;flex;
-  }
-  .gallery{
-    flex:100%;
-    max-width: 50%;
-  }
+
   .nav ul {
     margin:0;
     top: 0;
@@ -127,81 +166,149 @@ input[type=submit]:hover {
   }
   .nav li a:hover {
  background-color: yellow;
-}
+} */
+
 
 @media screen and (min-width: 500px){
-  .container{
-    display:flex;
-  }
-  .gallery{
-    flex:100%;
-    max-width: 100%;
+  .welcome{
+    font-weight: 00px;
+    text-align: center;
+    text-shadow: 2px 2px yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #1C6E8B;
   }
 
+  .welcometext{
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+
+    color:#1C6E8B;
+    padding-bottom: 20px;
+  }
+
+  .breakfast{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .breakfastpic{
+    margin-left: 50px;
+    display: block;
+
+  }
+  .breakfast2{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .breakfastpic2{
+    margin-left: 50px;
+    display: block;
+  }
+  .breakfast3{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .breakfastpic3{
+    margin-left: 50px;
+    display: block;
+  }
+  .lunch{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .lunchpic{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+
+  }
+  .lunch2{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .lunchpic2{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  .dinner{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .dinnerpic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+  }
+  .dinner2{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .dinnerpic2{
+    display: block;
+    margin-left: 100px;
+  }
+  .dinner3{
+    font-size: 20px;
+    color:#1C6E8B;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .dinnerpic3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   .nav ul {
     position: fixed;
     top: 0;
+    padding: 5px;
     width: 100%;
     background-color: #f0f6ff;
-    padding: 20px;
     color:  black;
     list-style-type: none;
+    text-align: center;
   }
   .nav li{
     display:inline-block;
-    padding-right: 25px;
+    padding: 5px;
   }
   .nav li a:hover {
  background-color: yellow;
 }
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gallery img{
+  width:600px;
+  flex-wrap: wrap;
+  margin-left: 100px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: white;
-  color: black;
-  transform: rotateY(180deg);
-}
-}
 
 @media screen and (prefers-reduced-motion: reduce){
     html{
