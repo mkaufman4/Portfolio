@@ -30,6 +30,191 @@ bottom: 0;
 }
 
 
+nav{
+  width: 100%;
+  text-align: center;
+}
+nav ul{
+  float:right;
+  line-height: 50px;
+  background-color:#f0f6ff ;
+  padding: 15px;
+}
+nav li{
+  display: inline;
+  list-style-type: none;
+  /* background-color:#f0f6ff ;  color:black; */
+  font-size: 18px;
+}
+nav a{
+  padding:10px;
+  text-decoration: none;
+  color: black;
+  background-color:#f0f6ff ; 
+
+}
+
+nav li a:visited{
+  color: black;
+}
+nav li:hover{
+  color: #c3dbff;
+}
+.parallax{
+  height:400px;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/michigan.jpg')
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.welcome{
+  animation-duration: .7s;
+  animation-name: bounceIn;
+}
+.welcome{
+
+  font-weight: 00px;
+  text-align: center;
+  text-shadow: 5px 5px rgb(255, 255, 116);
+  padding: 180px;
+  font-size: 30px;
+  color: #1C6E8B;
+  line-height: 25px;
+
+  
+}
+
+.welcometext{
+  padding-top:20px;
+  font-size: 25px;
+  line-height: 25px;
+  padding-left: 20px;
+  
+
+  color:#1C6E8B;
+  padding-bottom: 20px;
+}
+
+
+.breakfast{
+  font-size: 20px;
+  color:#1C6E8B;
+  padding: 10px;
+  line-height: 20px;
+  justify-content: center;
+  
+}
+.breakfast img{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+    max-width:100%;  
+}
+
+.breakfast2{
+  font-size: 20px;
+  color:#1C6E8B;
+  padding: 10px;
+  line-height: 20px;
+}
+.breakfast2 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width:100%;
+}
+.breakfast3{
+  font-size: 20px;
+  color:#1C6E8B;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.breakfast3 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width:100%;
+}
+.lunch{
+  font-size: 20px;
+  color: #1c6e8b;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.lunch img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
+}
+.lunch2{
+  font-size: 20px;
+  color: #1c6e8b;
+  padding: 10px;
+  line-height: 20px;
+}
+.lunch2 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
+}
+
+.dinner{
+  font-size: 20px;
+  color:#1C6E8B;
+  padding: 10px;
+  line-height: 20px;
+}
+.dinner img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
+}
+
+.dinner2{
+  font-size: 20px;
+  color:#1C6E8B;
+  padding: 10px;
+  line-height: 20px;
+}
+.dinner2 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
+}
+
+.dinner3{
+  font-size: 20px;
+  color:#1C6E8B;
+  padding: 10px;
+  line-height: 20px;
+}
+.dinner3 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
+}
+
 .flip-card {
 background-color: transparent;
 width: 300px;
@@ -95,6 +280,31 @@ top:0;
 border: 2px solid black;
 }
 
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width:1200px;
+  margin: 30px;
+  padding: 10px;
+}
+.galleryimg{
+  width: 350px;
+  height: 350px;
+  justify-content: center;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all ease 2s;
+  -webkit-transition: all ease 2s;
+}
+.galleryimg:hover{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+
 /* forms */
 .forms{
 border-radius: 5px;
@@ -127,6 +337,7 @@ input[type=submit]:hover {
 background-color: #2834C6;
 color: white;
 }
+
 
 /* .gallery {
   padding: 0;
@@ -165,8 +376,94 @@ color: white;
 background-color: yellow;
 } */
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
-@media screen and (min-width: 500px){
+nav{
+
+}
+nav ul{
+  float:none;
+  margin-top: 10px;
+  padding: 10px;
+  
+}
+nav li{
+  display: inline;
+  /* background-color:#f0f6ff ;  color:black; */
+  font-size: 18px;
+}
+nav li a:hover{
+  color: #c3dbff;
+
+}
+nav li a:visited{
+  color: black;
+}
+
+
+.breakfast{
+  text-align: center;
+}
+.breakfast2{
+  text-align: center;
+}
+.breakfast3{
+  text-align: center;
+}
+.lunch{
+  text-align: center;
+}
+.lunch2{
+  text-align: center;
+}
+.dinner{
+  text-align: center;
+}
+.dinner2{
+  text-align: center;
+}
+.dinner3{
+  text-align: center;
+}
+.dinner3{
+  justify-content: center;
+}
+.galleryimg{
+  -webkit-filter:grayscale(0);
+  filter: grayscale(0);
+}
+}
+
+@media screen and (min-width: 300px)and (max-width:768px){
+  nav{
+
+  }
+  nav ul{
+    float:none;
+    margin-top: 10px;
+    padding: 10px;
+    
+  }
+  nav{}
+   
+  nav li{
+
+  }
+  nav a{
+    display: block; 
+    border: 1px solid black;
+    margin: 0;
+    padding: 3px;
+  }
+  nav li a:hover{
+    color: #c3dbff;
+  
+  }
+  
+  nav li a:visited{
+    color: black;
+
+  }
 .welcome{
   font-weight: 00px;
   text-align: center;
@@ -193,21 +490,26 @@ background-color: yellow;
   color:#1C6E8B;
   padding: 10px;
   line-height: 20px;
+  justify-content: center;
 }
-.breakfastpic{
-  margin-left: 50px;
-  display: block;
+.breakfast img{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+    max-width:100%;  
+}
 
-}
 .breakfast2{
   font-size: 20px;
   color:#1C6E8B;
   padding: 10px;
   line-height: 20px;
 }
-.breakfastpic2{
-  margin-left: 50px;
-  display: block;
+.breakfast2 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width:100%;
 }
 .breakfast3{
   font-size: 20px;
@@ -215,99 +517,92 @@ background-color: yellow;
   padding: 10px;
   line-height: 20px;
 }
-.breakfastpic3{
-  margin-left: 50px;
-  display: block;
+
+.breakfast3 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width:100%;
 }
 .lunch{
   font-size: 20px;
-  color:#1C6E8B;
+  color: #1c6e8b;
   padding: 10px;
   line-height: 20px;
 }
-.lunchpic{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
 
+.lunch img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
 }
 .lunch2{
   font-size: 20px;
-  color:#1C6E8B;
+  color: #1c6e8b;
   padding: 10px;
   line-height: 20px;
 }
-.lunchpic2{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
+.lunch2 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
 }
+
 .dinner{
   font-size: 20px;
   color:#1C6E8B;
   padding: 10px;
   line-height: 20px;
 }
-.dinnerpic{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%
+.dinner img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
 }
+
 .dinner2{
   font-size: 20px;
   color:#1C6E8B;
   padding: 10px;
   line-height: 20px;
 }
-.dinnerpic2{
-  display: block;
-  margin-left: 100px;
+.dinner2 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 100%;
 }
+
 .dinner3{
   font-size: 20px;
   color:#1C6E8B;
   padding: 10px;
   line-height: 20px;
 }
-.dinnerpic3{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.nav ul {
-  position: fixed;
-  top: 0;
+.dinner3 img{
+  border: 1px solid #ddd;
+  border-radius: 6px;
   padding: 5px;
-  width: 100%;
-  background-color: #f0f6ff;
-  color:  black;
-  list-style-type: none;
-  text-align: center;
+  max-width: 100%;
+  margin-left: 30px;
 }
-.nav li{
-  display:inline-block;
-  padding: 5px;
-}
-.nav li a:hover {
-background-color: yellow;
-}
+
 .gallery{
-display: flex;
 flex-direction: row;
 flex-wrap:wrap;
-max-width: 1200px;
-margin:auto;
 justify-content: center;
-padding: 10px;
+width: 100px;
+
 }
 .gallery img{
   width:350px;
-  height: 350px;;
+  height: 350px;
   justify-content: center;
+  -webkit-filter:grayscale(0);
+  filter: grayscale(0);s
 }
 
 }
@@ -317,7 +612,11 @@ padding: 10px;
   html{
       scroll-behavior: auto;
   }
-
+.galleryimg{
+  
+  -webkit-transition: none !important;
+  transition: none 
+}
   .skip a{
     background: white;
     left: 0;
@@ -332,4 +631,7 @@ padding: 10px;
   .skip a:focus{
     top:0px;
   }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(0deg);
+    }
 }
